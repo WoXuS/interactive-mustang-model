@@ -15,31 +15,46 @@ html {
   left: 0;
   z-index: 1;
 }
-nav {
-  color: white;
+.controls {
   z-index: 2;
   position: relative;
-  padding: 4rem 8rem;
+}
+.tray-slide {
   display: flex;
-  justify-content: space-between;
 }
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 4rem;
-}
-
-.title {
-  color: white;
-  z-index: 2;
+.options {
   position: absolute;
-  font-size: 3rem;
-  left: 50%;
-  top: 25%;
-  transform: translate(-50%, -75%);
+  left: 0;
+  top: 50%;
+  z-index: 2;
+}
+.option {
+  background-size: cover;
+  background-position: 50%;
+  background-color: white;
+  margin-bottom: 3px;
+  padding: 10px;
+  height: 55px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.option:hover {
+  border-left: 5px solid white;
+  width: 58px;
+}
+.option.--is-active {
+  border-right: 3px solid red;
+  width: 58px;
+  cursor: default;
+}
+.option.--is-active:hover {
+  border-left: none;
+}
+.option img {
+  height: 100%;
+  width: auto;
+  pointer-events: none;
 }
