@@ -13,15 +13,20 @@
     />
   </head>
   <body>
+    <div class="options">
+      <div class="option --is-active" data-option="wheels">
+        <img src="./images/wheel.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="option" data-option="calipers">
+        <img src="./images/caliper.webp" alt="" loading="lazy" />
+      </div>
+    </div>
     <canvas class="webgl"></canvas>
-    <nav>
-      <a href="/">KWmedia</a>
-      <ul>
-        <li>Explore</li>
-        <li>Create</li>
-      </ul>
-    </nav>
-    <h1 class="title">Give it a spin</h1>
+    <div class="controls">
+      <div id="js-tray" class="tray">
+        <div id="js-tray-slide" class="tray-slide"></div>
+      </div>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
