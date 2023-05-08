@@ -47,7 +47,7 @@ To start the development server, run:
 npm run dev
 ```
 
-Open http://localhost:5173 to view the Mustang Customizer in your browser.
+Open http://localhost:5173 to view the Mustang customizer in your browser.
 
 ## Customization
 
