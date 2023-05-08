@@ -1,30 +1,38 @@
 export const colors = [
-  { // carbon fiber
-    texture: "./images/carbon.png",
+  {
+    // carbon fiber
+    texture: "/images/carbon.png",
     size: [2, 2, 2],
     shininess: 60,
   },
-  { // black
+  {
+    // black
     color: "00000",
   },
-  { // red
+  {
+    // red
     color: "FF0000",
   },
-  { // yellow
+  {
+    // yellow
     color: "ffd800",
     shininess: 60,
   },
-  { // silver
+  {
+    // silver
     color: "c0c0c0",
     shininess: 10,
   },
-  { // brown
+  {
+    // brown
     color: "66533C",
   },
-  { // bronze
+  {
+    // bronze
     color: "b08d56",
   },
-  { // green
+  {
+    // green
     color: "7fd061",
   },
 ];

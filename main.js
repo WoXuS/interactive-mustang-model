@@ -24,8 +24,8 @@ const tl = gsap.timeline({ defaults: { duration: 1 } });
 
 // Floor
 const floorGeometry = new THREE.CylinderGeometry(12, 12, 0.5, 64, 64);
-const floorNormal = new THREE.TextureLoader().load("./images/floor-normal4.jpg");
-const floorTexture = new THREE.TextureLoader().load("./images/floor4.jpg");
+const floorNormal = new THREE.TextureLoader().load("/images/floor-normal4.jpg");
+const floorTexture = new THREE.TextureLoader().load("/images/floor4.jpg");
 const floorMaterial = new THREE.MeshPhongMaterial({
   // color: 0x212121,
   map: floorTexture,
@@ -62,7 +62,7 @@ function initColor(parent, type, mtl, rename) {
 const loader = new GLTFLoader();
 let mustang;
 loader.load(
-  "./mustang/scene.gltf",
+  "/mustang/scene.gltf",
   function (gltf) {
     mustang = gltf.scene;
     mustang.traverse((o) => {

@@ -55,12 +55,14 @@ To add custom colors or textures, modify the colors.js file in the root folder. 
 
 ```javascript
 export const colors = [
-  { // carbon fiber
-    texture: "./images/carbon.png",
+  {
+    // carbon fiber
+    texture: "/images/carbon.png",
     size: [2, 2, 2],
     shininess: 60,
   },
-  { // black
+  {
+    // black
     color: "00000",
     shininess: 10,
   },
